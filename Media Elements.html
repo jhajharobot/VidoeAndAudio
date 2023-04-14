@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Audio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://images.unsplash.com/photo-1560870741-07fbef9462d2");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+			background-color:#DAF7A6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 48px;
+            color: #C70039;
+        }
+        h2 {
+            font-size: 36px;
+            color: #FFC300 ;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        video, audio {
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        .play-pause {
+            display: inline-block;
+            margin: 0 20px;
+            cursor: pointer;
+            background-color: #FF4500;
+            color: #FFF;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .play-pause:hover {
+            background-color: #E63F00;
+        }
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 36px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Baby Animal Dance | CoComelon Nursery Rhymes & Kids Songs</h1>
+
+        <h2>Video</h2>
+        <video width="100%" controls>
+            <source src="Baby Animal Dance - CoComelon Nursery Rhymes & Kids Songs.mp4" type="video/mp4">
+        </video>
+        <div class="controls">
+            <button class="play-pause" onclick="document.querySelector('video').paused ? document.querySelector('video').play() : document.querySelector('video').pause();">
+                <span id="play-icon">&#9658;</span>
+                <span id="pause-icon">&#10074;&#10074;</span>
+                <span id="button-text">Play</span>
+            </button>
+        </div>
+
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="Baby Animal Dance  CoComelon Nursery Rhymes & Kids Songs.mp3" type="audio/mpeg">
+        </audio>
+        <div class="controls">
+            <button class="play-pause" onclick="document.querySelector('audio').paused ? document.querySelector('audio').play() : document.querySelector('audio').pause();">
+			</div>
+               
+	</body>
+</html>
